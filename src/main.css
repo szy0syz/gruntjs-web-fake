@@ -3880,7 +3880,7 @@ pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .j
 [data-icon]:before {
     font-family: 'icomoon';
     content: attr(data-icon);
-    speak: none;
+    /* speak: none; */
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased
@@ -3888,7 +3888,7 @@ pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .j
 
 .icon-document-alt-stroke:before,.icon-power-cord:before,.icon-search:before,.icon-star:before,.icon-cog:before,.icon-fork:before,.icon-arrow-right:before,.anchor:before,.icon-github:before,.icon-twitter:before,.icon-feed:before,.icon-newspaper:before {
     font-family: 'icomoon';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -4724,7 +4724,7 @@ i {
 
 .plugin.contrib:after {
     font-family: 'icomoon';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     line-height: 1;
