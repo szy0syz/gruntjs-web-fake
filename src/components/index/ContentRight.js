@@ -68,6 +68,104 @@ export default function () {
           </a>
         </div>
       </div>
+      <div className="grunt-preview">
+        <h2>提前感受一下 Grunt 吧！</h2>
+        <p>
+          安装 grunt 虽然很简单，更多涉及到如何运行项目。看看下面的演示，这是为<a href="https://github.com/cowboy/jquery-tiny-pubsub">项目案例</a>运行 grunt 后的输出。
+        </p>
+        <pre className="terminal">
+          <span className="command-prompt">grunt</span>
+          Running "jshint:gruntfile" (jshint) task
+          <span className="green">&gt;&gt;</span>
+          1 file lint free.
+
+          Running "jshint:src" (jshint) task
+          <span className="green">&gt;&gt;</span>
+          1 file lint free.
+
+          Running "jshint:test" (jshint) task
+          <span className="green">&gt;&gt;</span>
+          1 file lint free.
+
+          Running "qunit:files" (qunit) task
+          Testing test/tiny-pubsub.html....<span className="green">OK</span>
+          <span className="green">&gt;&gt;</span>
+          4 assertions passed (23ms)
+
+          Running "clean:files" (clean) task
+          Cleaning "dist"...<span className="green">OK</span>
+          Running "concat:dist" (concat) task
+          File "dist/ba-tiny-pubsub.js" created.
+
+          Running "uglify:dist" (uglify) task
+          File "dist/ba-tiny-pubsub.min.js" created.
+          Uncompressed size: <span className="green">389</span>
+          bytes.
+          Compressed size: <span className="green">119</span>
+          bytes gzipped (<span className="green">185</span>
+          bytes minified).
+
+          <span className="green">Done, without errors.</span>
+          <span className="command-prompt active">
+            <span className="active-prompt"></span>
+          </span>
+        </pre>
+      </div>
+      <div className="who-uses-grunt">
+        <h2>谁在使用Grunt？</h2>
+        <p>
+          以下列出了一部分正在使用Grunt的公司或项目。 <a href="/who-uses-grunt">查看更多。</a>
+        </p>
+        <div>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-twitter.jpg" alt="Twitter" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-jquery.jpg" alt="jQuery" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-adobe.jpg" alt="Adobe" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-modernizr.jpg" alt="Modernizr" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-bocoup.jpg" alt="Bocoup" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-fg.jpg" alt="Filament Group" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-saucelabs.jpg" alt="Sauce Labs" />
+            </span>
+          </a>
+          <a href="/who-uses-grunt" className="technology">
+            <span className="logo">
+              <img src="/img/logo-bitovi.jpg" alt="Bitovi" />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div className="how-get-started">
+        <h2>如何开始使用Grunt？</h2>
+        <p>
+          <a href="/getting-started">快速入门</a>
+          文档能告诉你如何在项目中使用 Grunt。当你读完了此文档，请继续阅读 <a href="/sample-gruntfile">Gruntfile案例</a>和 <a href="/configuring-tasks">配置任务</a>.
+          </p>
+      </div>
     </div>
   );
 }
