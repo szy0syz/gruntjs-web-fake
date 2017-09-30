@@ -10,3 +10,4 @@
 ### 废话记录
 
 - 原css中`@keyframes 'blink'`这样写报错，修改为`@keyframes blink`，帧动画名称不需要加引号！
+- 记录了，以后如果React项目，css类名不能有横杠杠`-`啊，累死人的！
