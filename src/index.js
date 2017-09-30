@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import Index from './components/index/index';
+// import 'bootstrap/dist/css/bootstrap.css';
+import './main.css';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
+
+ReactDOM.render(
+  <div>
+    <Header />
+    <Content />
+    <Footer />
+  </div>,
+  document.getElementById('root')
+);
 registerServiceWorker();
