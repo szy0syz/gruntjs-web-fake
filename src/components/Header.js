@@ -1,7 +1,7 @@
 import React from 'react';
 export default function () {
   return (
-    <div className="navbar navbar-inverse">
+    <header className="navbar navbar-inverse">
       <div className="navbar-inner">
         <div className="container">
           <a href="/" className="brand">
@@ -37,6 +37,6 @@ export default function () {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

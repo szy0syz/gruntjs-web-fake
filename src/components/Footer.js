@@ -1,7 +1,7 @@
 import React from 'react';
 export default function () {
   return (
-    <div className="grunt-footer">
+    <footer className="grunt-footer">
       <div className="inner">
         <div className="container">
           <ul className="pull-left">
@@ -23,6 +23,6 @@ export default function () {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
