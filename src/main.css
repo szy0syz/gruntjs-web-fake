@@ -3963,7 +3963,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
     border: 0
 }
 
-@keyframes 'blink' {
+@keyframes blink {
     0% {
         opacity: 1.0
     }
@@ -3977,7 +3977,7 @@ textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type=
     }
 }
 
-@-webkit-keyframes 'blink' {
+@-webkit-keyframes blink {
     0% {
         opacity: 1.0
     }
@@ -4121,7 +4121,7 @@ i {
 
 .page-secondary .brand .logo {
     background-size: 100% auto;
-    -ms-behavior: url('/backgroundsize.htc')
+    behavior: url('/backgroundsize.htc')
 }
 
 .page-secondary .brand {
