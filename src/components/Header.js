@@ -1,8 +1,8 @@
 import React from 'react';
 export default function () {
   return (
-    <div className="navbar navbar-inserse">
-      <div className="narbar-inner">
+    <div className="navbar navbar-inverse">
+      <div className="navbar-inner">
         <div className="container">
           <a href="/" className="brand">
             <img src="./img/grunt-logo.png" alt="logo" />

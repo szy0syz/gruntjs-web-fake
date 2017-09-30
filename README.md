@@ -5,3 +5,8 @@
 
 - React组件式开发
 - 主路由仅控制content切换
+
+
+### 废话记录
+
+- 原css中`@keyframes 'blink'`这样写报错，修改为`@keyframes blink`，帧动画名称不需要加引号！
