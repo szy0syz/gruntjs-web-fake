@@ -74,38 +74,40 @@ export default function () {
           安装 grunt 虽然很简单，更多涉及到如何运行项目。看看下面的演示，这是为<a href="https://github.com/cowboy/jquery-tiny-pubsub">项目案例</a>运行 grunt 后的输出。
         </p>
         <pre className="terminal">
-          <span className="command-prompt">grunt</span>
-          Running "jshint:gruntfile" (jshint) task
-          <span className="green">&gt;&gt;</span>
-          1 file lint free.
-
-          Running "jshint:src" (jshint) task
-          <span className="green">&gt;&gt;</span>
-          1 file lint free.
-
-          Running "jshint:test" (jshint) task
-          <span className="green">&gt;&gt;</span>
-          1 file lint free.
-
-          Running "qunit:files" (qunit) task
-          Testing test/tiny-pubsub.html....<span className="green">OK</span>
-          <span className="green">&gt;&gt;</span>
-          4 assertions passed (23ms)
-
-          Running "clean:files" (clean) task
-          Cleaning "dist"...<span className="green">OK</span>
-          Running "concat:dist" (concat) task
-          File "dist/ba-tiny-pubsub.js" created.
-
-          Running "uglify:dist" (uglify) task
-          File "dist/ba-tiny-pubsub.min.js" created.
+          <span className="command-prompt">grunt</span><br />
+          Running "jshint:gruntfile" (jshint) task<br />
+          <span className="green">&gt;&gt; </span>
+          1 file lint free.<br />
+          <br />
+          Running "jshint:src" (jshint) task<br />
+          <span className="green">&gt;&gt; </span>
+          1 file lint free.<br />
+          <br />
+          Running "jshint:test" (jshint) task<br />
+          <span className="green">&gt;&gt; </span>
+          1 file lint free.<br />
+          <br />
+          Running "qunit:files" (qunit) task<br />
+          Testing test/tiny-pubsub.html....<span className="green">OK</span><br />
+          <span className="green">&gt;&gt; </span>
+          4 assertions passed (23ms)<br />
+          <br />
+          Running "clean:files" (clean) task<br />
+          Cleaning "dist"...<span className="green">OK</span><br />
+          <br />
+          Running "concat:dist" (concat) task<br />
+          File "dist/ba-tiny-pubsub.js" created.<br />
+          <br />
+          Running "uglify:dist" (uglify) task<br />
+          File "dist/ba-tiny-pubsub.min.js" created.<br />
           Uncompressed size: <span className="green">389</span>
-          bytes.
+          bytes.<br />
           Compressed size: <span className="green">119</span>
           bytes gzipped (<span className="green">185</span>
-          bytes minified).
-
-          <span className="green">Done, without errors.</span>
+          bytes minified).<br />
+          <br />
+          <span className="green">Done, without errors.</span><br />
+          <br />
           <span className="command-prompt active">
             <span className="active-prompt"></span>
           </span>
