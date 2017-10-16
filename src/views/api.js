@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => (
-  <p style={{ fontSize: 32 }}>plugins</p>
+  <p style={{ fontSize: 32 }}>API</p>
 );

@@ -8,12 +8,12 @@ import registerServiceWorker from './registerServiceWorker';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import Home from './views/home';
+import App from './router';
 
 ReactDOM.render(
   <div>
     <Header />
-    <Home />
+    <App />
     <Footer />
   </div>,
   document.getElementById('root')
