@@ -28,7 +28,7 @@ export default function () {
                 </a>
               </li>
               <li>
-                <a href="/api">
+                <a href="/api/grunt">
                   <i className="icon-cog"></i>
                   <span>API</span>
                 </a>
