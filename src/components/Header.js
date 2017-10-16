@@ -10,25 +10,25 @@ export default function () {
           <div className="nav-collapse collapse">
             <ul className="nav">
               <li>
-                <a href="/getting-started">
+                <a href="/started">
                   <i className="icon-arrow-right"></i>
                   <span>快速入门</span>
                 </a>
               </li>
               <li>
-                <a href="/getting-started">
+                <a href="/plugins">
                   <i className="icon-power-cord"></i>
                   <span>插件列表</span>
                 </a>
               </li>
               <li>
-                <a href="/getting-started">
+                <a href="/docs">
                   <i className="icon-document-alt-stroke"></i>
                   <span>中文文档</span>
                 </a>
               </li>
               <li>
-                <a href="/getting-started">
+                <a href="/api">
                   <i className="icon-cog"></i>
                   <span>API</span>
                 </a>
