@@ -7,16 +7,17 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import home from './components/index';
+import Home from './components/index';
+import NotFound from './views/notfound';
 
 const Router = (props) => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={index} />
+        <Route exact path="/" component={Home} />
 
         <Redirect from="/*" to="/" />
-        {/* <Route component={NotFound} /> */}
+        {<Route component={NotFound} />}
       </Switch>
     </Router>
   )
