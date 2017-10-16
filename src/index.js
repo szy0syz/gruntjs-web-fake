@@ -6,13 +6,14 @@ import './style/main.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import Header from './components/Header';
-import Content from './components/Content';
 import Footer from './components/Footer';
+
+import Home from './views/home';
 
 ReactDOM.render(
   <div>
     <Header />
-    <Content />
+    <Home />
     <Footer />
   </div>,
   document.getElementById('root')
