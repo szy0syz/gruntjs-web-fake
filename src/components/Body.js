@@ -6,6 +6,8 @@ export default class Body extends Component {
     return(
       <body>
         <p>1123</p>
+        123123
+        333
       </body>
     );
   }
