@@ -10,7 +10,7 @@
 - 原css中`@keyframes 'blink'`这样写报错，修改为`@keyframes blink`，帧动画名称不需要加引号！
 - 以后如果React项目，css类名不能有横杠杠`-`啊，累死人的！
 - 路由用精确匹配`exact`，倒数第二个配一个Redirect`/*`路由至首页，最后一个配一个`<Route component={NotFound} />`，但最后这个路由基本匹配不到。
-- 
+- 升级了，React不再挂载root元素，而是直接挂body元素。
 
 
 ![screenshot](http://ofx24fene.bkt.clouddn.com//img/project/grunt_web_screenshot.jpg)
