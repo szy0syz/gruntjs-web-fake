@@ -6,7 +6,7 @@ export default class Header extends Component {
         <div className="navbar-inner">
           <div className="container">
             <a href="/" className="brand">
-              <img src="./img/grunt-logo.png" alt="logo" />
+              <img src="/img/grunt-logo.png" alt="logo" />
             </a>
             <div className="nav-collapse collapse">
               <ul className="nav">

@@ -1,5 +1,6 @@
 import React from 'react';
-// import APIMenu from '../../components/api/menu';
+import APIMenu from '../../components/api/menu';
+
 export default () => (
   <div className="content">
     <div className="container grunt.config">
@@ -151,9 +152,7 @@ export default () => (
                         </div>
           </div>
         </div>
-        <div className="span3">
-          span3
-        </div>
+        <APIMenu/>
       </div>
     </div>
   </div>
