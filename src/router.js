@@ -26,6 +26,15 @@ const App = (props) => {
         <Route exact path="/api" component={APIGrunt} />
         <Route exact path="/api/grunt" component={APIGrunt} />
         <Route exact path="/api/grunt.config" component={APIGrunt} />
+        <Route exact path="/api/grunt.event" component={APIGrunt} />
+        <Route exact path="/api/grunt.fail" component={APIGrunt} />
+        <Route exact path="/api/grunt.log" component={APIGrunt} />
+        <Route exact path="/api/grunt.option" component={APIGrunt} />
+        <Route exact path="/api/grunt.task" component={APIGrunt} />
+        <Route exact path="/api/grunt.template" component={APIGrunt} />
+        <Route exact path="/api/grunt.util" component={APIGrunt} />
+        <Route exact path="/api/inside-tasks" component={APIGrunt} />
+        <Route exact path="/api/exit-codes" component={APIGrunt} />
         {/* <Redirect from="/started" to="/docs" /> */}
         {<Redirect from="/*" to="/" />}
         <Route component={NotFound} />
