@@ -25,6 +25,7 @@ const App = (props) => {
         <Route exact path="/docs" component={Docs} />
         <Route exact path="/api" component={APIGrunt} />
         <Route exact path="/api/grunt" component={APIGrunt} />
+        <Route exact path="/api/grunt.config" component={APIGrunt} />
         {/* <Redirect from="/started" to="/docs" /> */}
         {<Redirect from="/*" to="/" />}
         <Route component={NotFound} />

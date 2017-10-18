@@ -1,57 +1,69 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Menu = (props) => (
-  <div className="span3">
-    <div className="well sidebar-nav">
-      <ul className="nav nav-list">
-        <li className="nav-header">
-          <i className="icon-cog"></i>
-          <span>API</span>
-        </li>
-        <li>
-          <a href="/api/grunt" className="active">grunt</a>
-        </li>
-        <li>
-          <a href="/api/grunt.config" className="false">grunt.config</a>
-        </li>
-        <li>
-          <a href="/api/grunt.event" className="false">grunt.event</a>
-        </li>
-        <li>
-          <a href="/api/grunt.fail" className="false">grunt.fail</a>
-        </li>
-        <li>
-          <a href="/api/grunt.file" className="false">grunt.file</a>
-        </li>
-        <li>
-          <a href="/api/grunt.log" className="false">grunt.log</a>
-        </li>
-        <li>
-          <a href="/api/grunt.option" className="false">grunt.option</a>
-        </li>
-        <li>
-          <a href="/api/grunt.task" className="false">grunt.task</a>
-        </li>
-        <li>
-          <a href="/api/grunt.template" className="false">grunt.template</a>
-        </li>
-        <li>
-          <a href="/api/grunt.util" className="false">grunt.util</a>
-        </li>
-      </ul>
-      <ul className="nav nav-list">
-        <li className="nav-header">
-          <span>其他</span>
-        </li>
-        <li>
-          <a href="/api/inside-tasks" className="false">深入任务内幕</a>
-        </li>
-        <li>
-          <a href="/api/exit-codes" className="false">退出码</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-);
+const apiList = [
+  { href: '/api/grunt', label: 'grunt' },
+  { href: '/api/grunt.config', label: 'grunt.config' },
+  { href: '/api/grunt.event', label: 'grunt.event' },
+  { href: '/api/grunt.fail', label: 'grunt.fail' },
+  { href: '/api/grunt.log', label: 'grunt.log' },
+  { href: '/api/grunt.option', label: 'grunt.option' },
+  { href: '/api/grunt.task', label: 'grunt.task' },
+  { href: '/api/grunt.template', label: 'grunt.template' },
+  { href: '/api/grunt.util', label: 'grunt.util' }
+];
 
-export default Menu;
+const otherList = [
+  { href: '/api/inside-tasks', label: '深入任务内幕' },
+  { href: '/api/exit-codes', label: '退出码' }
+];
+
+export default class Menu extends Component {
+
+  constructor() {
+    super();
+    this.state = ({
+      api: [],
+      other: []
+    });
+  }
+
+  componentWillMount() {
+    let pathname = window.location.pathname;
+    let napiList = apiList.map((v) => v.href === pathname ? { ...v, className: 'active' } : v);
+    let notherList = otherList.map((v) => v.href === pathname ? { ...v, className: 'active' } : v);
+    this.setState({
+      api: napiList,
+      other: notherList
+    });
+  }
+
+  handleLi = (attrs) => (
+    attrs.map((v, i) => (
+      <li key={i}>
+        <a href={v.href} className={v.className}>{v.label}</a>
+      </li>
+    ))
+  )
+
+  render() {
+    return (
+      <div className="span3">
+        <div className="well sidebar-nav">
+          <ul className="nav nav-list">
+            <li className="nav-header">
+              <i className="icon-cog"></i>
+              <span>API</span>
+            </li>
+            {this.handleLi(this.state.api)}
+          </ul>
+          <ul className="nav nav-list">
+            <li className="nav-header">
+              <span>其他</span>
+            </li>
+            {this.handleLi(this.state.other)}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
