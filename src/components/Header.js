@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
+    let pathname = window.location.pathname;
     return (
       <header className="navbar navbar-inverse">
         <div className="navbar-inner">
           <div className="container">
             <a href="/" className="brand">
-              <img src="/img/grunt-logo.png" alt="logo" />
+              <img style={pathname === '/' ? null : { width: '190px', height: '224px' }} src="/img/grunt-logo.png" alt="logo" />
             </a>
             <div className="nav-collapse collapse">
               <ul className="nav">
